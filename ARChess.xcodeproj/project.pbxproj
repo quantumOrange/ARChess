@@ -32,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54115A052513A6C1002DF01D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		54B0DAA2250A796400913136 /* ARChess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARChess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B0DAA5250A796400913136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54B0DAA7250A796400913136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		54B0DA99250A796400913136 = {
 			isa = PBXGroup;
 			children = (
+				54115A052513A6C1002DF01D /* README.md */,
 				54B0DAA4250A796400913136 /* ARChess */,
 				54B0DABB250A796600913136 /* ARChessTests */,
 				54B0DAA3250A796400913136 /* Products */,

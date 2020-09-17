@@ -22,25 +22,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func requestMoveIfNeeded()
-    {
-        if chessboard.whosTurnIsItAnyway == .black
-        {
-            let board = chessboard
-            DispatchQueue.global().async
-            {
-                if let move = pickMove(for: board, depth: 1) ,
-                   let newBoard = apply(move: move, to: board)
-                   {
-                      DispatchQueue.main.async
-                      {
-                        self.chessboard = newBoard
-                      }
-                   }
-            }
-        }
-    }
-    
+   
     @IBOutlet var arView: ARView!
     
     var chessAnchor: Experience.Chess!
@@ -52,7 +34,6 @@ class ViewController: UIViewController {
         self.chessAnchor = try! Experience.loadChess()
         
         chessAnchor.actions.tapToSelect.onAction = handleTapOnChesspiece(_:)
-        //chessAnchor.actions.ta
 
         arView.scene.anchors.append(chessAnchor)
        
@@ -68,40 +49,16 @@ class ViewController: UIViewController {
             hideAllSquare()
             
             if let (square, piece) = selected {
-                print("selected \(piece) on \(square)")
                 showValidDestinationSquares(for: square)
             }
         }
     }
     
-    func hideAllSquare() {
-        chessboard
-            .squares
-            .compactMap{ chessAnchor.entity(for: $0)}
-            .forEach{ $0.isEnabled = false }
-    }
-    
-    func showValidDestinationSquares(for square: ChessboardSquare) {
-        chessboard
-            .validDestinationSquares(for: square)
-            .compactMap{ chessAnchor.entity(for: $0)}
-            .forEach{
-                print("\($0.name) is enabled")
-                $0.isEnabled = true
-                
-            }
-    }
-    
     func handleTapOnChesspiece(_ entity: Entity?) {
         guard let entity = entity else { return }
-        print("--------------------------------")
-        print("got a Entity called \(entity.name)")
         
         if let (square, piece) = chessboard.piece(for: entity) {
-           print("Piece: \(piece) on Square: \(square)")
             switch piece.player {
-                
-            
             case .white:
                 //select this piece
                 selected =  (square, piece)
@@ -115,8 +72,41 @@ class ViewController: UIViewController {
             tryToMove(to: square)
         }
         else {
-            print("An unidentified Entity named \(entity.name) was tapped")
+            print("WARNING: An unidentified Entity named \(entity.name) was tapped")
         }
+    }
+    
+    func requestMoveIfNeeded()
+   {
+       if chessboard.whosTurnIsItAnyway == .black
+       {
+           let board = chessboard
+           DispatchQueue.global().async
+           {
+               if let move = pickMove(for: board, depth: 1) ,
+                  let newBoard = apply(move: move, to: board)
+                  {
+                     DispatchQueue.main.async
+                     {
+                       self.chessboard = newBoard
+                     }
+                  }
+           }
+       }
+   }
+    
+    func hideAllSquare() {
+        chessboard
+            .squares
+            .compactMap{ chessAnchor.entity(for: $0)}
+            .forEach{ $0.isEnabled = false }
+    }
+    
+    func showValidDestinationSquares(for square: ChessboardSquare) {
+        chessboard
+            .validDestinationSquares(for: square)
+            .compactMap{ chessAnchor.entity(for: $0)}
+            .forEach{ $0.isEnabled = true  }
     }
     
     func tryToMove(to square:ChessboardSquare)
