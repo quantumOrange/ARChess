@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         positionPiecesOnBoard()
         positionSquaresOnBoard()
         hideAllSquare()
+    
     }
     
     var selected:(ChessboardSquare,ChessPiece)? {
