@@ -7641,6 +7641,84 @@
                     }
                   ],
                   "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "target" : [
+                                            "09D83218-EC1A-4C06-BB82-92FFE42E2D9A"
+                                          ],
+                                          "userIdentifier" : "TapToSelect"
+                                        },
+                                        "name" : {
+                                          "type" : "custom"
+                                        }
+                                      },
+                                      "identifier" : "4097E1FA-00CE-498C-9DD4-0BB39752A09D",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "F3135C3B-2258-450D-A78B-F807F91F6037",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.49019607901573181,
+                        0.7450980544090271,
+                        0.94901961088180542,
+                        1
+                      ],
+                      "identifier" : "BD93D39D-72FC-45A1-8033-42F6BB6F4BF4",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : false,
+                      "name" : "tap black king",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "09D83218-EC1A-4C06-BB82-92FFE42E2D9A"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "320BB310-94DE-46DC-9551-8CEA8CE8FDFE",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
                 }
               ],
               "gravity" : [
@@ -9161,89 +9239,7 @@
                       ]
                     }
                   },
-                  "3A2BFEEC-7BBD-41E5-84AD-FD8B9EAAEBFA" : {
-                    "overrides" : {
-                      "arguments" : [
-                        [
-                          "item",
-                          {
-                            "typeName" : "String",
-                            "value" : "Chess Queen"
-                          }
-                        ],
-                        [
-                          "style",
-                          {
-                            "typeName" : "String",
-                            "value" : "Stylized"
-                          }
-                        ]
-                      ],
-                      "children" : {
-                        "item" : {
-                          "overrides" : {
-                            "factory" : null,
-                            "runtimeAttributes" : [
-                              [
-                                "RuntimeIdentifier",
-                                {
-                                  "typeName" : "UUID",
-                                  "value" : "43C22EC7-32D0-4C7B-AABE-CD9108D2381F"
-                                }
-                              ]
-                            ]
-                          }
-                        }
-                      },
-                      "factory" : {
-                        "identifier" : "com.apple.rc.af.ChessQueen.0468744a-eda3-48d3-9a57-23a98746fec5",
-                        "version" : "1.0"
-                      },
-                      "runtimeAttributes" : [
-                        [
-                          "RuntimeIdentifier",
-                          {
-                            "typeName" : "UUID",
-                            "value" : "CB7FB6C4-C471-417A-A0DC-1A1ED808C136"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "black king e8"
-                          }
-                        ],
-                        [
-                          "rigidBody-enabled",
-                          {
-                            "typeName" : "Bool",
-                            "value" : true
-                          }
-                        ]
-                      ]
-                    },
-                    "transform" : {
-                      "matrix" : [
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0.022023977711796761,
-                        0.024999992921948433,
-                        -0.1800360232591629,
-                        1
-                      ]
-                    }
-                  },
+                  "3A2BFEEC-7BBD-41E5-84AD-FD8B9EAAEBFA" : null,
                   "3CE26693-B5FD-4FE9-9D17-D8902FDB87B9" : null,
                   "3D127A80-C098-44BA-97D4-E4560C6CF319" : {
                     "overrides" : {
@@ -16622,6 +16618,89 @@
                       ]
                     }
                   },
+                  "F0E4BF90-FD70-49B4-805F-1FF50653F217" : {
+                    "overrides" : {
+                      "arguments" : [
+                        [
+                          "item",
+                          {
+                            "typeName" : "String",
+                            "value" : "Chess King"
+                          }
+                        ],
+                        [
+                          "style",
+                          {
+                            "typeName" : "String",
+                            "value" : "Stylized"
+                          }
+                        ]
+                      ],
+                      "children" : {
+                        "item" : {
+                          "overrides" : {
+                            "factory" : null,
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "336BD8D3-3573-4CDF-8E26-EB95244F0879"
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      },
+                      "factory" : {
+                        "identifier" : "com.apple.rc.af.ChessKing.c43179cb-c89e-492b-ae53-e5cc5a3738d4",
+                        "version" : "1.0"
+                      },
+                      "runtimeAttributes" : [
+                        [
+                          "RuntimeIdentifier",
+                          {
+                            "typeName" : "UUID",
+                            "value" : "09D83218-EC1A-4C06-BB82-92FFE42E2D9A"
+                          }
+                        ],
+                        [
+                          "entityName",
+                          {
+                            "typeName" : "String",
+                            "value" : "black king e8"
+                          }
+                        ],
+                        [
+                          "rigidBody-enabled",
+                          {
+                            "typeName" : "Bool",
+                            "value" : true
+                          }
+                        ]
+                      ]
+                    },
+                    "transform" : {
+                      "matrix" : [
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
+                        0.026384603232145309,
+                        0.022299991920590401,
+                        -0.17520582675933838,
+                        1
+                      ]
+                    }
+                  },
                   "F10CACE3-67AD-4757-BA9E-E9D793459DD3" : {
                     "overrides" : {
                       "arguments" : [
@@ -17256,21 +17335,21 @@
               "title" : "Chess",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.89455753564834595,
-                  2.9802318834981634e-08,
-                  0.44695261120796204,
+                  0.99351197481155396,
+                  2.9802325940408991e-08,
+                  0.11372760683298111,
                   0,
-                  0.44083008170127869,
-                  0.16495242714881897,
-                  -0.88230347633361816,
+                  0.075770311057567596,
+                  0.74573379755020142,
+                  -0.66192150115966797,
                   0,
-                  -0.07372640073299408,
-                  0.98630142211914062,
-                  0.14755964279174805,
+                  -0.084810845553874969,
+                  0.66624373197555542,
+                  0.74089562892913818,
                   0,
-                  -0.15001475811004639,
-                  0.5558210015296936,
-                  0.26625204086303711,
+                  0.057387843728065491,
+                  0.45037227869033813,
+                  0.40945643186569214,
                   1
                 ],
                 "sceneTransform" : [
