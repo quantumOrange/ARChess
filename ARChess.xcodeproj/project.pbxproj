@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		54B0DAAF250A796600913136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B0DAAE250A796600913136 /* Assets.xcassets */; };
 		54B0DAB2250A796600913136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B0DAB0250A796600913136 /* LaunchScreen.storyboard */; };
 		54B0DABD250A796600913136 /* ARChessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0DABC250A796600913136 /* ARChessTests.swift */; };
+		54B0DAC8250B5DA500913136 /* Experince.Chess+ChessEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0DAC7250B5DA500913136 /* Experince.Chess+ChessEngine.swift */; };
+		54B0DACB250B6AAF00913136 /* ChessEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 54B0DACA250B6AAF00913136 /* ChessEngine */; };
+		54B0DACD250B92AD00913136 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0DACC250B92AD00913136 /* Util.swift */; };
+		54B0DACF250BC2F500913136 /* Chessboard+Experience.Chess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0DACE250BC2F500913136 /* Chessboard+Experience.Chess.swift */; };
+		54B0DAD1250BD54300913136 /* ChessboardSquare+Experience.Chess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B0DAD0250BD54300913136 /* ChessboardSquare+Experience.Chess.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,10 @@
 		54B0DAB8250A796600913136 /* ARChessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARChessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B0DABC250A796600913136 /* ARChessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARChessTests.swift; sourceTree = "<group>"; };
 		54B0DABE250A796600913136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54B0DAC7250B5DA500913136 /* Experince.Chess+ChessEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Experince.Chess+ChessEngine.swift"; sourceTree = "<group>"; };
+		54B0DACC250B92AD00913136 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		54B0DACE250BC2F500913136 /* Chessboard+Experience.Chess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chessboard+Experience.Chess.swift"; sourceTree = "<group>"; };
+		54B0DAD0250BD54300913136 /* ChessboardSquare+Experience.Chess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChessboardSquare+Experience.Chess.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54B0DACB250B6AAF00913136 /* ChessEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				54B0DAA5250A796400913136 /* AppDelegate.swift */,
+				54B0DACC250B92AD00913136 /* Util.swift */,
 				54B0DAA7250A796400913136 /* ViewController.swift */,
+				54B0DACE250BC2F500913136 /* Chessboard+Experience.Chess.swift */,
+				54B0DAD0250BD54300913136 /* ChessboardSquare+Experience.Chess.swift */,
+				54B0DAC7250B5DA500913136 /* Experince.Chess+ChessEngine.swift */,
 				54B0DAA9250A796400913136 /* Experience.rcproject */,
 				54B0DAAB250A796400913136 /* Main.storyboard */,
 				54B0DAAE250A796600913136 /* Assets.xcassets */,
@@ -115,6 +129,9 @@
 			dependencies = (
 			);
 			name = ARChess;
+			packageProductDependencies = (
+				54B0DACA250B6AAF00913136 /* ChessEngine */,
+			);
 			productName = ARChess;
 			productReference = 54B0DAA2250A796400913136 /* ARChess.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 54B0DA99250A796400913136;
+			packageReferences = (
+				54B0DAC9250B6AAF00913136 /* XCRemoteSwiftPackageReference "ChessEngine" */,
+			);
 			productRefGroup = 54B0DAA3250A796400913136 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -202,7 +222,11 @@
 			files = (
 				54B0DAA8250A796400913136 /* ViewController.swift in Sources */,
 				54B0DAA6250A796400913136 /* AppDelegate.swift in Sources */,
+				54B0DACD250B92AD00913136 /* Util.swift in Sources */,
+				54B0DAC8250B5DA500913136 /* Experince.Chess+ChessEngine.swift in Sources */,
 				54B0DAAA250A796400913136 /* Experience.rcproject in Sources */,
+				54B0DACF250BC2F500913136 /* Chessboard+Experience.Chess.swift in Sources */,
+				54B0DAD1250BD54300913136 /* ChessboardSquare+Experience.Chess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				INFOPLIST_FILE = ARChess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,6 +408,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Y3R5UC5Q;
 				INFOPLIST_FILE = ARChess/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54B0DAC9250B6AAF00913136 /* XCRemoteSwiftPackageReference "ChessEngine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quantumOrange/ChessEngine.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54B0DACA250B6AAF00913136 /* ChessEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54B0DAC9250B6AAF00913136 /* XCRemoteSwiftPackageReference "ChessEngine" */;
+			productName = ChessEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54B0DA9A250A796400913136 /* Project object */;
 }
